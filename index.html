@@ -8,16 +8,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap" rel="stylesheet">
 <style>
-*{
-  font-family: 'Noto Sans', sans-serif;
-  color: white;
-}
-p{
-  padding-left: 3px;
-}
-#content{
-margin-top: 20px;
-}
 [class*="col-"] {
 width: 100%;
 }
@@ -39,6 +29,16 @@ padding: 5px;
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 }
+*{
+  font-family: 'Noto Sans', sans-serif;
+  color: white;
+}
+p{
+  padding: 5px;
+}
+#content{
+margin-top: 20px;
+}
 header{
 width: 100%;
 height: 100px;
@@ -50,20 +50,21 @@ h1{
   color: white;
   padding: 5px;
 }
-#Beverwijk{
-  max-height: 150px;
-  width: auto;
-  padding: 5px;
-}
 #wijkertoren{
-  max-width: 50px;
+  max-width: 100px;
   float: right;
   padding: 5px;
+  border-style: double;
+  color: white;
+  margin: 5px;
 }
 #beverwijkdrone{
-  max-width: 70px;
+  max-width: 100px;
   float: right;
   padding: 5px;
+  border-style: double;
+  color: white;
+  margin: 5px;
 }
 .footer{
 width: 100%;
@@ -81,9 +82,33 @@ min-width: 150px;
 position: relative;
 background-color: olive;
 }
-#drie{
+
+#vier{
 min-height: 300px;
+min-width: 150px;
+position: relative;
 background-color: brown;
+}
+#ses{
+min-height: 300px;
+min-width: 150px;
+position: relative;
+background-color: brown;
+}
+@media only screen and (min-width: 768px) {
+  .footer{
+  background-color: red;
+}
+
+#beverwijkdrone{
+  max-width: 50px;
+  float: right;
+  padding: 5px;
+}
+#wijkertoren{
+  max-width: 50px;
+  float: right;
+  padding: 5px;
 }
 #vier{
 min-height: 300px;
@@ -91,14 +116,18 @@ min-width: 150px;
 position: relative;
 background-color: brown;
 }
-#vijf{
-min-height: 300px;
-background-color: brown;
-}
 #ses{
 min-height: 300px;
 min-width: 150px;
 position: relative;
+background-color: brown;
+}
+#drie{
+min-height: 300px;
+background-color: brown;
+}
+#vijf{
+min-height: 300px;
 background-color: brown;
 }
 #seven{
@@ -120,10 +149,6 @@ background-color: brown;
 #elf{
 min-height: 300px;
 background-color: brown;
-}
-@media only screen and (min-width: 768px) {
-.footer{
-background-color: red;
 }
 }
 </style>
